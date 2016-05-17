@@ -3,7 +3,7 @@
 | Item                                                                                                                     | Status |
 |--------------------------------------------------------------------------------------------------------------------------|--------|
 | App uses the Design Support library and its provided widget types (FloatingActionButton, AppBarLayout, SnackBar, etc).   |        |
-| App uses CoordinatorLayout for the main Activity.                                                                        |        |
+| App uses CoordinatorLayout for the main Activity.                                                                        |   Progress     |
 | App theme extends from AppCompat.                                                                                        |        |
 | App uses an AppBar and associated Toolbars.                                                                              |        |
 | App provides a Floating Action Button for the most common action(s).                                                     |        |
