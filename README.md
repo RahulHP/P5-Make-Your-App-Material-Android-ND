@@ -6,7 +6,7 @@
 | App uses CoordinatorLayout for the main Activity.                                                                        |   Progress     |
 | App theme extends from AppCompat.                                                                                        |        |
 | App uses an AppBar and associated Toolbars.                                                                              |        |
-| App provides a Floating Action Button for the most common action(s).                                                     |        |
+| App provides a Floating Action Button for the most common action(s).                                                     |  Done      |
 | App properly specifies elevations for app bars, FABs, and other elements specified in the Material Design specification. |        |
 | App has a consistent color theme defined in styles.xml. Color theme does not impact usability of the app.                |        |
 | App provides sufficient space between text and surrounding elements.                                                     |        |
