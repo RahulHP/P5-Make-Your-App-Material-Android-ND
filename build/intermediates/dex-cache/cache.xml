@@ -23,18 +23,18 @@
         <dex dex="/home/rahulhp/Android Apps/XYZReader/XYZReader/build/intermediates/pre-dexed/debug/classes-9f273152d543457fdbcd9a49889347ceaab612e6.jar" />
     </item>
     <item
-        jar="/home/rahulhp/Android Apps/XYZReader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v13/23.2.1/jars/libs/internal_impl-23.2.1.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="bd48446a8b4b2fdcac0e38f49b5d6dc3abb1eefa">
-        <dex dex="/home/rahulhp/Android Apps/XYZReader/XYZReader/build/intermediates/pre-dexed/debug/internal_impl-23.2.1-39e80b79317d2c85bf3ad06de64b1ba484498cc9.jar" />
-    </item>
-    <item
         jar="/home/rahulhp/Android Apps/XYZReader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.3"
         sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
         <dex dex="/home/rahulhp/Android Apps/XYZReader/XYZReader/build/intermediates/pre-dexed/debug/classes-809bb347826663fa9bea0766c9d9592edb3a2a6e.jar" />
+    </item>
+    <item
+        jar="/home/rahulhp/Android Apps/XYZReader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v13/23.2.1/jars/libs/internal_impl-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="bd48446a8b4b2fdcac0e38f49b5d6dc3abb1eefa">
+        <dex dex="/home/rahulhp/Android Apps/XYZReader/XYZReader/build/intermediates/pre-dexed/debug/internal_impl-23.2.1-39e80b79317d2c85bf3ad06de64b1ba484498cc9.jar" />
     </item>
     <item
         jar="/root/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
