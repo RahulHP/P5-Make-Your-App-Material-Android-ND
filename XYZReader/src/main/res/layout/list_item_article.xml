@@ -2,12 +2,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="4dp"
-    android:layout_marginRight="4dp"
-    android:layout_marginTop="4dp"
-    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="@dimen/cardview_overall_padding"
+    android:layout_marginRight="@dimen/cardview_overall_padding"
+    android:layout_marginTop="@dimen/cardview_overall_padding"
+    android:layout_marginBottom="@dimen/cardview_overall_padding"
     android:clickable="true"
-    android:elevation="@dimen/cardview_default_elevation"
+    android:elevation="@dimen/cardview_elevation"
     android:focusable="true"
     android:foreground="?selectableItemBackground">
 
@@ -19,32 +19,32 @@
         <!--suppress AndroidLintContentDescription -->
         <com.example.xyzreader.ui.DynamicHeightNetworkImageView
             android:id="@+id/thumbnail"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cardview_image_height"
             android:background="@color/photo_placeholder" />
 
         <TextView
+            android:paddingTop="@dimen/cardview_top_padding"
+            android:paddingBottom="@dimen/cardview_bottom_padding"
+            android:paddingLeft="@dimen/cardview_side_padding"
+            android:paddingRight="@dimen/cardview_side_padding"
+            android:textSize="@dimen/cardview_title_size"
             android:alpha="0.87"
             android:id="@+id/article_title"
-            style="@style/TextAppearance.AppCompat.Subhead"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="16dp"
-            android:paddingTop="16dp"
-            android:paddingRight="16dp"
-            android:paddingBottom="4dp"
             android:ellipsize="end"
             android:maxLines="4" />
 
         <TextView
             android:alpha="0.54"
+            android:textSize="@dimen/cardview_byline_size"
             android:id="@+id/article_subtitle"
-            style="@style/TextAppearance.AppCompat.Body1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingBottom="16dp"
+            android:paddingLeft="@dimen/cardview_side_padding"
+            android:paddingRight="@dimen/cardview_side_padding"
+            android:paddingBottom="@dimen/cardview_bottom_padding"
             android:maxLines="1"
             android:singleLine="true"
             android:ellipsize="end" />
