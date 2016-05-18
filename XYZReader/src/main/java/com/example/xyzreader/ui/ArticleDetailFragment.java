@@ -44,6 +44,7 @@ public class ArticleDetailFragment extends Fragment implements
     private long mItemId;
     private View mRootView;
     private int mMutedColor = 0xFF333333;
+    private int mVibrantColor = 0xffe0e0e0;
     private ObservableScrollView mScrollView;
     private DrawInsetsFrameLayout mDrawInsetsFrameLayout;
     private ColorDrawable mStatusBarColorDrawable;
@@ -177,8 +178,8 @@ public class ArticleDetailFragment extends Fragment implements
             return;
         }
 
-        TextView titleView = (TextView) mRootView.findViewById(R.id.article_title);
-        TextView bylineView = (TextView) mRootView.findViewById(R.id.article_byline);
+        final TextView titleView = (TextView) mRootView.findViewById(R.id.article_title);
+        final TextView bylineView = (TextView) mRootView.findViewById(R.id.article_byline);
         bylineView.setMovementMethod(new LinkMovementMethod());
         TextView bodyView = (TextView) mRootView.findViewById(R.id.article_body);
         bodyView.setTypeface(Typeface.createFromAsset(getResources().getAssets(), "Rosario-Regular.ttf"));
@@ -204,10 +205,21 @@ public class ArticleDetailFragment extends Fragment implements
                             Bitmap bitmap = imageContainer.getBitmap();
                             if (bitmap != null) {
                                 Palette p = Palette.generate(bitmap, 12);
-                                mMutedColor = p.getDarkMutedColor(0xFF333333);
+                                //https://guides.codepath.com/android/Dynamic-Color-using-Palettes
+                                Palette.Swatch DarkMuted = p.getDarkMutedSwatch();
+                                if (DarkMuted!=null){
+                                    mMutedColor = p.getDarkMutedColor(0xFF333333);
+                                    mVibrantColor = DarkMuted.getTitleTextColor();
+                                } else {
+                                    mMutedColor = 0xFF333333;
+                                    mVibrantColor = 0xffe0e0e0;
+                                }
+                                mPhotoContainerView.setBackgroundColor(mMutedColor);
                                 mPhotoView.setImageBitmap(imageContainer.getBitmap());
                                 mRootView.findViewById(R.id.meta_bar)
                                         .setBackgroundColor(mMutedColor);
+                                titleView.setTextColor(mVibrantColor);
+                                bylineView.setTextColor(mVibrantColor);
                                 updateStatusBar();
                             }
                         }
