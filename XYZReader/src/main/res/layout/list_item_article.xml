@@ -24,6 +24,7 @@
             android:background="@color/photo_placeholder" />
 
         <TextView
+            android:alpha="0.87"
             android:id="@+id/article_title"
             style="@style/TextAppearance.AppCompat.Subhead"
             android:layout_width="match_parent"
@@ -36,6 +37,7 @@
             android:maxLines="4" />
 
         <TextView
+            android:alpha="0.54"
             android:id="@+id/article_subtitle"
             style="@style/TextAppearance.AppCompat.Body1"
             android:layout_width="match_parent"

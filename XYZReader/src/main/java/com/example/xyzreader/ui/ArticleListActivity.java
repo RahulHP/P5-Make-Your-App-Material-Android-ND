@@ -48,8 +48,9 @@ public class ArticleListActivity extends AppCompatActivity implements
         CollapsingToolbarLayout toolbarContainerView = (CollapsingToolbarLayout) findViewById(R.id.collapsing_container);
 
         toolbarContainerView.setTitle(getString(R.string.app_name));
-        toolbarContainerView.setExpandedTitleColor(getResources().getColor(R.color.theme_accent));
-        toolbarContainerView.setCollapsedTitleTextColor(getResources().getColor(R.color.red));
+        toolbarContainerView.setBackgroundColor(getResources().getColor(R.color.theme_primary));
+
+
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
